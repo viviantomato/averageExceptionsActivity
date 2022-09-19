@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
  1. Run the code, entering a few numbers and computing an average.
  ```
- python main.py
+ python3 main.py
  ```
 
  2. Read the code in `average_calculator/calc.py`, discussing with your group how it works.
