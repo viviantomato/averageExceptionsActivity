@@ -9,7 +9,7 @@ def test_average_of_two_numbers_is_properly_computed():
     pass
 
 @pytest.mark.skip
-def test_average_of_empty_list_throws_ValueError():
+def test_average_of_empty_list_raises_ValueError():
     # Delete the skip and write the test here!
     # Hint: use pytest.raises
     pass
