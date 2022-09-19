@@ -22,7 +22,7 @@ def calculator():
 
 def print_average(numbers):
     average_value = rounded_average(numbers)
-    print(f"The (rounded) average of the numbers you entered is {average_value}")
+    print(f"The rounded average of the numbers you entered is {average_value}")
 
 
 def rounded_average(numbers):
