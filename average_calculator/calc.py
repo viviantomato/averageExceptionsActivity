@@ -1,5 +1,8 @@
+from math import floor
+
+
 def calculator():
-    print("This calculator will help you find a rounded average!")
+    print("This calculator will help you find a rounded-down average!")
     print("Enter integers one at a time.")
     print("When you're ready to compute an average, type 'compute'")
     
@@ -15,16 +18,18 @@ def calculator():
         else:
             try:
                 number = int(user_input)
-                numbers.append(number)
             except ValueError:
                 print("Invalid input. Input must be an integer or 'compute'")
+                continue
+
+            numbers.append(number)
 
 
 def print_average(numbers):
     average_value = rounded_average(numbers)
-    print(f"The rounded average of the numbers you entered is {average_value}")
+    print(f"The rounded-down average of the numbers you entered is {average_value}")
 
 
 def rounded_average(numbers):
     avg = sum(numbers) / len(numbers)
-    return round(avg)
+    return floor(avg)
