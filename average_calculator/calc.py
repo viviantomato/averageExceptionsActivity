@@ -21,9 +21,10 @@ def calculator():
 
 
 def print_average(numbers):
-    average_value = average(numbers)
-    print(f"The average of the numbers you entered is {average_value:.2f}")
+    average_value = rounded_average(numbers)
+    print(f"The (rounded) average of the numbers you entered is {average_value}")
 
 
-def average(numbers):
-    return sum(numbers) / len(numbers)
+def rounded_average(numbers):
+    avg = sum(numbers) / len(numbers)
+    return round(avg)
