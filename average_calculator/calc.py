@@ -1,5 +1,5 @@
 def calculator():
-    print("This calculator will help you find an average!")
+    print("This calculator will help you find a rounded average!")
     print("Enter integers one at a time.")
     print("When you're ready to compute an average, type 'compute'")
     
